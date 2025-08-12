@@ -1,0 +1,18 @@
+{
+  "name": "mijn-node-server",
+  "version": "1.0.0",
+  "description": "Een Node.js server met express, cookie-parser, pdfkit, sqlite3 en nodemailer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cookie-parser": "^1.4.6",
+    "pdfkit": "^0.13.0",
+    "sqlite3": "^5.1.6",
+    "nodemailer": "^6.9.4"
+  },
+  "author": "",
+  "license": "ISC"
+}
