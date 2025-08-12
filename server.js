@@ -6,6 +6,7 @@ const db = require('./database.js');
 const factuur = require('./factuur.js');
 const mail = require('./mail.js');
 const PORT = 8080;
+const HOST = '0.0.0.0';
 
 app.use(express.json(), express.urlencoded({ extended: true }), cookieParser(), express.static(path.join(__dirname, 'public')));
 
@@ -128,6 +129,6 @@ app.use((req, res) => {
     res.status(404).send('404 - Pagina niet gevonden');
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, HOST, () => {
     console.log("De server draait!");
 });
