@@ -5,7 +5,7 @@ const cookieParser = require('cookie-parser')
 const db = require('./database.js');
 const factuur = require('./factuur.js');
 const mail = require('./mail.js');
-const PORT = 8080;
+const PORT = 3000;
 const HOST = '0.0.0.0';
 
 app.use(express.json(), express.urlencoded({ extended: true }), cookieParser(), express.static(path.join(__dirname, 'public')));
