@@ -1,0 +1,112 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    background: rgb(239, 239, 239);
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+}
+
+.container * {
+    text-align: center;
+}
+
+.logo {
+    height: 12vh;
+    width: 12vh;
+    border-radius: 20%;
+    object-fit: cover;
+    overflow: hidden;
+    margin: 0 30px;
+}
+
+.titel {
+    font-size: 2.5rem;
+    font-family: 'Bodoni MT';
+    margin: 1vh 0 0 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 30px 50px;
+}
+
+.nav-links a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin: 30px 0 0 0;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-group.half {
+    flex: 1;
+}
+
+.betaal-button {
+    width: 20vw;
+    padding: 12px;
+    background-color: rgb(59, 46, 232);
+    color: white;
+    border: 2px solid;
+    border-color: lightgrey;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+#betalingsmethode{
+    width: 100px;
+}

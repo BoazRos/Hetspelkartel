@@ -1,0 +1,31 @@
+CREATE TABLE IF NOT EXISTS spel (
+	id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+	name VARCHAR(100) NOT NULL,
+	price FLOAT NOT NULL,
+	imageName VARCHAR(100) NOT NULL
+);
+
+Insert into spel (name, price, imageName) VALUES 
+('Wingspan', 10, 'wingspan.png'),
+('Regenwormen', 2, 'catan.png'),
+('Ticket To Ride', 10, 'ticket-to-ride.png');
+('Catan', 4, 'noImage'),
+('Carcassonne', 5, 'noImage'),
+('Azul', 4, 'noImage'),
+('Pandemic', 4, 'noImage'),
+('7 Wonders', 7, 'noImage'),
+('Dobble', 8, 'noImage'),
+('Codenames', 8, 'noImage'),
+('Splendor', 4, 'noImage'),
+('De Crypto', 8, 'noImage'),
+('Saboteur', 10, 'noImage'),
+('Weerwolven', 20, 'noImage'),
+('Qwixx', 5, 'noImage'),
+('Boekenspel', 6, 'noImage'),
+('Uno', 10, 'noImage'),
+('Exploding Kittens', 5, 'noImage'),
+('Love Letter', 4, 'noImage'),
+('Beverbende', 6, 'noImage'),
+('Keer op Keer', 4, 'noImage'),
+('Skull', 6, 'noImage'),
+('Boonanza', 7, 'noImage');

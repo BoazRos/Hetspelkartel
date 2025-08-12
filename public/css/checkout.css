@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: black;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    background: rgb(239, 239, 239);
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+}
+
+.container * {
+    text-align: center;
+}
+
+.logo {
+    height: 12vh;
+    width: 12vh;
+    border-radius: 20%;
+    object-fit: cover;
+    overflow: hidden;
+    margin: 0 30px;
+}
+
+.titel {
+    font-size: 2.5rem;
+    font-family: 'Bodoni MT';
+    margin: 1vh 0 0 0;
+}
+
+h2{
+    margin: 5vh 0 0 10vw;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 30px 50px;
+}
+
+.nav-links a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+#checkout-overview{
+    max-width: 80vw;
+    margin: 0 10vw;
+}
+
+#checkout-overview span{
+    margin: 10px 40px;
+}
+
+#cart-items{
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item img{
+    height: 10vh;
+}
+
+.cart-item * {
+    margin: 0 40px;
+}
+
+table {
+    border: 2px solid;
+    border-color: lightgrey ;
+}
+
+th {
+    border: 1px solid;
+    border-color: black;
+    padding: 0 30px;
+    min-width: 10vw;
+}
+
+td{
+    text-align: center;
+}
+
+td{
+    font-size: 1.2rem;
+}
+
+td img{
+    max-height: 80px;
+}
+
+
+.total {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+button {
+    background-color: rgb(200, 200, 200);
+    margin: 0;
+}
+
+button:focus {
+    background-color: rgb(220, 220, 220);
+}
+
+.betaal-button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.removeButton {
+    width: 50%;
+    padding: 10px;
+}
+
+.extra-information {
+    color: gray;
+}

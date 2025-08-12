@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Het Spelkartel</title>
+        <link rel="stylesheet" href="/css/order.css" />
+    </head>
+    <body>
+        <header class="header">
+            <img class="logo" src='/images/logo2.png' alt="Alternate Text" />
+            <h1 class="titel">Het Spelkartel</h1>
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="/spelmenu">Spellen</a>
+                <a href="/checkout">Winkelwagen</a>
+            </nav>
+        </header>
+        
+        <div class="center">
+            <div class="form-container">
+                <h2>Bestelformulier</h2>
+                <form action="/set-customer" method="post">
+
+                    <div class="form-group">
+                        <label for="voornaam">Voornaam</label>
+                        <input type="text" id="voornaam" name="voornaam" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="achternaam">Achternaam</label>
+                        <input type="text" id="achternaam" name="achternaam" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mailadres</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label for="straatnaam">Straatnaam</label>
+                            <input type="text" id="straatnaam" name="straatnaam" required>
+                        </div>
+
+                        <div class="form-group half">
+                            <label for="huisnummer">Huisnummer</label>
+                            <input type="text" id="huisnummer" name="huisnummer" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group half">
+                        <label for="postcode">Postcode</label>
+                        <input type="text" id="postcode" name="postcode" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="stad">Stad</label>
+                        <input type="text" id="stad" name="stad" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="betalingsmethode">Betalingsmethode</label>
+                        <select type="text" id="betalingsmethode" name="betalingsmethode" required>
+                            <option value="Factuur">Factuur</option>
+                        </select>
+                        <p extra-information><em>Er is nu helaas alleen betaling via factuur mogelijk. We zijn bezig om iDEAL toe te voegen. Exuses voor het ongemak</em></p>
+                    </div>
+
+                    <button type="submit" class="betaal-button">Bestelling Plaatsen</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+
