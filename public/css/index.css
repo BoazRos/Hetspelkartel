@@ -1,3 +1,7 @@
+html * {
+    font-size: 1rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -26,14 +30,16 @@ body {
 .logo{
     height: 12vh;
     width: 12vh;
+    min-width: 50px;
     border-radius: 20%; 
     object-fit: cover;
     overflow: hidden;
-    margin: 0 30px;
+    margin: 0 5vw;
 }
 
 .titel {
     font-size: 2.5rem;
+    min-width: 236px;
     font-family: 'Bodoni MT';
     margin: 1vh 0 0 0;
 }
@@ -170,4 +176,68 @@ h3{
 
 h3{
     margin: 20px 0 0 0;
+}
+@media (min-width: 600px){
+    .nav-links .icon{
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+    html{
+        font-size: 12px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        background: rgb(239, 239, 239);
+        color: rgb(0, 0, 0);
+        padding: 10px 0;
+    }
+
+    .logo{
+        margin: 5px;
+        height: 50px;
+        width: auto;
+    }
+
+    .titel{
+        font-size: 1.5rem;
+        min-width: 130px;
+        margin: 0;
+    }
+
+    .nav-links{
+        margin: 0;
+        justify-content: left;
+        margin: 0 10px;
+    }
+
+    .nav-links .text {
+        display: none;
+    }
+
+    .nav-links a img{
+        width: 4vh;
+        height: auto;
+    }
+
+    .hero{
+        height: 40vh;
+        background-size: 700px;
+    }
+
+    .spellen-container{
+        flex-direction: column;
+        max-height: 30vh;
+        overflow-y:auto;
+    }
+
+    .spel-container img{
+        height: 100px;
+        min-width: 100px;
+    }
 }
